@@ -1,0 +1,7 @@
+-- Your SQL goes here
+CREATE TABLE books (
+ id SERIAL PRIMARY KEY,
+ title VARCHAR(50) NOT NULL,
+ author VARCHAR(50) NOT NULL,
+ published BOOLEAN NOT NULL DEFAULT 0
+)

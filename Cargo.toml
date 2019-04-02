@@ -1,0 +1,10 @@
+[package]
+name = "diesel_usage"
+version = "0.1.0"
+authors = ["neerajbisht1987 <bisht.neeraj@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+diesel = { version = "1.4.0" , features = ["mysql"]}
+#diesel_codegen = {version="0.16.1", features = ["mysql"] }
+dotenv = "0.10.1"
