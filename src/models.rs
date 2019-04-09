@@ -9,7 +9,7 @@ use crate::schema::books::dsl::books as all_books;
 
 
 
-#[derive(Queryable)]
+#[derive(Serialize,Queryable,Debug,Clone)]
 pub struct Book {
     pub id : u64,
     pub title : String,
@@ -17,7 +17,7 @@ pub struct Book {
     pub published: bool,
 }
 
-#[derive(Insertable)]
+#[derive(Insertable,Serialize,Deserialize)]
 #[table_name = "books"]
 pub struct NewBook {
     pub title: String,
